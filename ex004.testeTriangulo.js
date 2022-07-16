@@ -1,0 +1,18 @@
+var readlineSync = require('readline-sync');
+console.log('===============');
+console.log(' TESTE DOS TRIÂNGULO ');
+console.log('===============');
+var ladoA = Number (readlineSync.question('Digite o primeiro lado: '));
+var ladoB = Number (readlineSync.question('Digite o segundo lado: '));
+var ladoC = Number (readlineSync.question('Digite o terceiro lado: '));
+var triangulo = Math.abs(ladoB - ladoC) < ladoA && ladoA < ladoB + ladoC && Math.abs(ladoC - ladoA) < ladoB && ladoB < ladoC + ladoA && Math.abs(ladoA - ladoB) < ladoC && ladoC < ladoA + ladoB;
+var equilatero = ladoA == ladoB && ladoB == ladoC && ladoC == ladoA;
+var escaleno = ladoA != ladoB && ladoB != ladoC && ladoC != ladoA;
+console.log('===============');
+console.log(' TESTE DOS TRIÂNGULO ');
+console.log('===============');
+console.log(`Valores digitados: ${ladoA}, ${ladoB}, ${ladoC}`);
+console.log(`triangulo: ${triangulo}`);
+console.log(`equilatero: ${equilatero}`);
+console.log(`escaleno: ${escaleno}`);
+console.log('===============');
