@@ -16,7 +16,7 @@ if(IMC >= 18.5 && IMC <= 24.9) {
   console.log('Sua classificação é Sobrepeso!');
 } else if (IMC >= 30 && IMC <= 39.9) {
   console.log('Sua classificação é Obesidade!');
-} else (IMC >= 40) {
+} else IMC >= 40 {
   console.log('Sua classificação é Obesidade Grave!');
 }
 console.log('===================');
